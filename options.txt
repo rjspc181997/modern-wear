@@ -1,0 +1,31 @@
+<!-- Cart Modal -->
+<!-- <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        <p>Item 1 <br> Item 2 <br> Item 3</p>
+        <--You can populate items dynamically with JS later -->
+      <!-- </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="resetCart">Reset</button>
+        <button type="button" class="btn btn-success">Checkout</button>
+      </div>
+
+    </div>
+  </div>
+</div> -->
+
+
+    /**Cart Modal */
+    document.getElementById('resetCart').addEventListener('click', function () {
+      updateCartCount(0); // This hides the badge
+      const modalBody = document.querySelector('#cartModal .modal-body');
+      modalBody.innerHTML = '<p>No items yet.</p>';
+    });
